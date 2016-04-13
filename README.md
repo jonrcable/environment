@@ -63,9 +63,9 @@ http://www.sequelpro.com/download
 
 	(note: this will create an folder called .homestead in your home directory with a file called Homestead.yaml)
 
-- clone this repository into a folder called Code in the root of your home folder
+- clone this repository into the Development folder in a new folder called Code
 
-	!# cd ~/
+	!# cd ~/Development
 
 	!# git clone https://github.com/jonrcable/enviroment.git Code
 
