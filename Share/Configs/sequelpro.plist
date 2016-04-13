@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SPConnectionFavorites</key>
+	<array>
+		<dict>
+			<key>colorIndex</key>
+			<integer>-1</integer>
+			<key>database</key>
+			<string></string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>id</key>
+			<integer>-881079645734015617</integer>
+			<key>name</key>
+			<string>Vagrant</string>
+			<key>port</key>
+			<string></string>
+			<key>socket</key>
+			<string></string>
+			<key>sshHost</key>
+			<string>192.168.10.10</string>
+			<key>sshKeyLocation</key>
+			<string>~/.ssh/id_rsa</string>
+			<key>sshKeyLocationEnabled</key>
+			<integer>1</integer>
+			<key>sshUser</key>
+			<string>vagrant</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<integer>2</integer>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>homestead</string>
+		</dict>
+	</array>
+</dict>
+</plist>

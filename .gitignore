@@ -1,0 +1,4 @@
+#ignore the following local stuff
+*.DS_Store
+.idea/
+.vagrant/
