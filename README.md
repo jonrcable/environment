@@ -8,7 +8,7 @@ https://laravel.com/docs/5.2/homestead
 ## Persistent Databases
 At first one of the things that irritated me about using Vagrant in development was blowing away my testing data for that day, week… Sure in Laravel we have Database Migrations and Seeding but sometimes you just want to hold on to that testing data for a little while, ya know?!
 
-After a recent OS format I decided to give vagrant another try and discovered the Vagrant Trigger extension which allows you to work a little magic on both Up/Destroy. A couple of bash scripts to import and export the current mysql database and store them in a Share folder for each project should not be rocket science, so here we are…
+After a recent OS format I decided to dive a bit deeper into vagrant and discovered the Vagrant Trigger extension which allows you to work a little magic on both Up/Destroy. A couple of bash scripts to import and export the current mysql database(s) for each project is not rocket science, so combine the two and… magic!
 
 I will likely build onto this but its mostly here to share and archive.
 
@@ -24,11 +24,11 @@ A few of you have been asking me about building better environments, here is one
 note(s)
 - PHPstorm is not required here but we love it, its awesome and you should totally try it out right meow.
 
-https://www.jetbrains.com/phpstorm/
+   https://www.jetbrains.com/phpstorm/
 
 - Laravel is not required here but we love it too, it rocks and you should totally try it out right meow.
 
-https://laravel.com
+   https://laravel.com
 
 
 ## Required 
