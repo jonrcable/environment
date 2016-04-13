@@ -3,6 +3,7 @@ Development Environment v1.0
 
 A sensible, organized vagrant workflow using Homestead that works for me. Makes it easy to maintain separate projects, control the VMs directly in PHPStorm and maintain persistent MySQL databases by project on each build. Although this uses the laravel/homestead virtual box as a base; it covers most of the needs for any modern web development.
 
+
 ## Persistent Databases
 At first one of the things that irritated me about using Vagrant in development was blowing away my testing data for that day, week… Sure in Laravel we have Database Migrations and Seeding but sometimes you just want to hold on to that testing data for a little while, ya know?!
 
@@ -11,6 +12,7 @@ After a recent OS format I decided to dive a bit deeper into vagrant and discove
 I will likely build onto this but its mostly here to share and archive.
 
 A few of you have been asking me about building better environments, here is one of many ways to go about it!
+
 
 ## My Development System (tested using)
 - OSX 10.11.4 El Capitan
@@ -39,10 +41,8 @@ The easy part. Download and install the following tools, follow the defaults.
 Virtual Box
 https://www.virtualbox.org/wiki/Downloads
 
-
 Vagrant
 https://www.vagrantup.com/downloads.html
-
 
 Sequel Pro
 http://www.sequelpro.com/download
@@ -56,12 +56,6 @@ http://www.sequelpro.com/download
 
 	!# vagrant box add laravel/homestead
 
-- create a new folder in the root of your home folder called Development
-
-	!# cd ~/
-
-	!# mkdir Development
-
 - download the homestead package into a folder called Homestead in the root of your home folder
 
 	!# cd ~/
@@ -74,12 +68,17 @@ http://www.sequelpro.com/download
 
 	(note: this will create an folder called .homestead in your home directory with a file called Homestead.yaml)
 
+- create a new folder in the root of your home folder called Development
+
+	!# cd ~/
+
+	!# mkdir Development
+
 - clone this repository into the Development folder in a new folder called Code
 
 	!# cd ~/Development
 
 	!# git clone https://github.com/jonrcable/enviroment.git Code
-
 
 - edit the local Homestead.yaml config file and change the 1st folder in the list to the following
 
@@ -127,7 +126,6 @@ http://www.sequelpro.com/download
 - goto your web browser
 
     http://code.dev
-
 
 - Open Sequel Pro and import the sequelpro.plist configuration in ~/Code/Share/Configs
 (if a password is required on the first connection, see account information below)
