@@ -38,7 +38,7 @@ else
   printf " * already exists\n"
 fi
 
-printf " * start MySQL database import\n"
+printf " * start database import\n"
 cd "$_thisPath"
 
 # Parse through each file in the directory and use the file name to
