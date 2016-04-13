@@ -50,6 +50,12 @@ http://www.sequelpro.com/download
 
 	!# vagrant plugin install vagrant-triggers
 
+- add the laravel/homestead box to your available VMs (may take a few mins)
+
+	!# vagrant box add laravel/homestead	
+
+vagrant box add laravel/homestead
+
 - create a new folder in the root of your home folder called Development
 
 	!# cd ~/
