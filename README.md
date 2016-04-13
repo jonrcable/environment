@@ -5,6 +5,18 @@ A sensible, organized vagrant installation that works for me. Makes it easy to m
 
 https://laravel.com/docs/5.2/homestead
 
+## My Development System (tested using)
+- OSX 10.11.4 El Capitan
+- PHPStorm 2016.1
+- Virtual Box 5.0.16
+- Sequel Pro 1.1.2
+- Vagrant 1.8.1
+
+note(s)
+- PHPstorm is not required here but we love it, its awesome and you should totally try it out right meow. https://www.jetbrains.com/phpstorm/
+
+- Laravel is not required here but we love it too, it rocks and you should totally try it out right meow. https://laravel.com
+
 ## Persistent Databases
 At first one of the things that irritated me about using Vagrant in development was blowing away my testing data for that day, week… Sure in Laravel we have Database Migrations and Seeding but sometimes you just want to hold on to that testing data for a little while, ya know?!
 
@@ -12,14 +24,7 @@ After a recent OS format I decided to give vagrant another try and discovered th
 
 I will likely build onto this including the instructions on how to do a basic installation. I know a few of you out there that have been asking me about better enviroments, here is one of many!
 
-note(s)
-- PHPstorm is not required here but we love it, its awesome and you should totally try it out right meow.
 
-https://www.jetbrains.com/phpstorm/
-
-- Laravel is not required here but we love it too, it rocks and you should totally try it out right meow.
-
-https://laravel.com
 
 ## Required 
 The easy part. Download and install the following tools, follow the defaults.
