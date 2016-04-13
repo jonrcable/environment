@@ -1,9 +1,18 @@
 Development Environment v1.0
 ===========
 
-A sensible, organized vagrant installation that works for me. Makes it easy to maintain separate projects, control the VMs directly in PHPStorm and maintain persistent MySQL databases by project on each build. Although this uses the laravel/homestead virtual box as a base; it covers most of the needs for any modern web development.
+A sensible, organized vagrant workflow using Homestead that works for me. Makes it easy to maintain separate projects, control the VMs directly in PHPStorm and maintain persistent MySQL databases by project on each build. Although this uses the laravel/homestead virtual box as a base; it covers most of the needs for any modern web development.
 
 https://laravel.com/docs/5.2/homestead
+
+## Persistent Databases
+At first one of the things that irritated me about using Vagrant in development was blowing away my testing data for that day, week… Sure in Laravel we have Database Migrations and Seeding but sometimes you just want to hold on to that testing data for a little while, ya know?!
+
+After a recent OS format I decided to give vagrant another try and discovered the Vagrant Trigger extension which allows you to work a little magic on both Up/Destroy. A couple of bash scripts to import and export the current mysql database and store them in a Share folder for each project should not be rocket science, so here we are…
+
+I will likely build onto this but its mostly here to share and archive.
+
+A few of you have been asking me about building better environments, here is one of many ways to go about it!
 
 ## My Development System (tested using)
 - OSX 10.11.4 El Capitan
@@ -20,15 +29,6 @@ https://www.jetbrains.com/phpstorm/
 - Laravel is not required here but we love it too, it rocks and you should totally try it out right meow.
 
 https://laravel.com
-
-## Persistent Databases
-At first one of the things that irritated me about using Vagrant in development was blowing away my testing data for that day, week… Sure in Laravel we have Database Migrations and Seeding but sometimes you just want to hold on to that testing data for a little while, ya know?!
-
-After a recent OS format I decided to give vagrant another try and discovered the Vagrant Trigger extension which allows you to work a little magic on both Up/Destroy. A couple of bash scripts to import and export the current mysql database and store them in a Share folder for each project should not be rocket science, so here we are…  
-
-I will likely build onto this but its mostly here to share and archive.
-
-A few of you have been asking me about building better environments, here is one of many ways to go about it!
 
 
 ## Required 
