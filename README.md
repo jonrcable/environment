@@ -31,7 +31,7 @@ note(s)
    https://laravel.com
 
 
-## Required 
+## Required Dependencies
 The easy part. Download and install the following tools, follow the defaults.
 
 Virtual Box
@@ -45,7 +45,7 @@ https://www.vagrantup.com/downloads.html
 Sequel Pro
 http://www.sequelpro.com/download
 
-## Usage
+## Installation & Usage
 - install vagrant triggers so we can use callbacks and save our database on up/destroy
 
 	!# vagrant plugin install vagrant-triggers
