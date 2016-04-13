@@ -127,7 +127,7 @@ http://www.sequelpro.com/download
 (if a password is required on the first connection, see account information below)
 
 
-## Testing in PHPStorm
+## Testing in PHPStorm & SequelPro
 - open PHPStorm, create a new project and map it to a folder in ~/Development/Code/Sites/{ NEW }
 
 - goto Tools -> Vagrant -> Init in Project Root
@@ -141,11 +141,17 @@ http://www.sequelpro.com/download
 	projectDir=“{ NEW }”
 - goto Tools -> Vagrant -> Up
 
+- open Sequel Pro and change the homestead database, create a new database you get the idea...
+
 - goto Tools -> Vagrant -> Destroy
 
 - check your work, goto ~/Code/Share/Databases
 
 	(note: you should see a single folder for any project in which a Vagrant box has been started. In each folder you should find the latest sql dump for each database)
+
+- goto Tools -> Vagrant -> Up
+
+- open Sequel Pro, all database changes should be preserved	from the last Destroy
 
 Does it work?
 
