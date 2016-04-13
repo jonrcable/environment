@@ -31,6 +31,5 @@ grep -v -F "performance_schema" | \
 grep -v -F "mysql" | \
 grep -v -F "test" | \
 grep -v -F "Database" | \
-grep -v -F "homestead" | \
 grep -v -F "sys" | \
-while read dbname; do mysqldump -uhomestead -psecret $dbname > $_thisPath/$dbname.sql && echo "Database $dbname backed up..."; done
+while read dbname; do mysqldump -uhomestead -psecret $dbname > $dbname.sql && echo "Database $dbname backed up..."; done
