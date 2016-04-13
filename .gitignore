@@ -2,3 +2,8 @@
 *.DS_Store
 .idea/
 .vagrant/
+Sites/*
+!Sites/Base
+!Sites/Base/public
+Share/Databases/*
+!Share/Databases/Base
