@@ -1,7 +1,7 @@
 Development Environment v1.0
 ===========
 
-A sensible, organized vagrant installation that works for me. Makes it easy to maintain separate projects and control the VMs directly in PHPStorm. Although this uses the homestead/laravel virtual box as a base; it covers most of the needs for most modern web development. 
+A sensible, organized vagrant installation that works for me. Makes it easy to maintain separate projects, control the VMs directly in PHPStorm and maintain persistent MySQL databases by project on each build. Although this uses the laravel/homestead virtual box as a base; it covers most of the needs for any modern web development.
 
 https://laravel.com/docs/5.2/homestead
 
