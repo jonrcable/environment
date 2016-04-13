@@ -22,8 +22,7 @@ At first one of the things that irritated me about using Vagrant in development 
 
 After a recent OS format I decided to give vagrant another try and discovered the Vagrant Trigger extension which allows you to work a little magic on both Up/Destroy. A couple of bash scripts to import and export the current mysql database and store them in a Share folder for each project should not be rocket science, so here we are…  
 
-I will likely build onto this including the instructions on how to do a basic installation. I know a few of you out there that have been asking me about better enviroments, here is one of many!
-
+I will likely build onto this. A few of you outhave been asking me about better environments, here is one of many!
 
 
 ## Required 
@@ -82,7 +81,7 @@ http://www.sequelpro.com/download
 
 		  to:  /home/vagrant/Code
 
- (note e.g.)
+ (note e.g. you can add more site like so, be careful make sure the folder exists!)
 
 	sites:
 
@@ -99,7 +98,7 @@ http://www.sequelpro.com/download
 
  !# sudo nano /etc/hosts
 
- + edit (one the last blank line enter each domain, one line each repeat the same IP)
+ + edit (on the last blank line enter each domain, one line each repeat the same IP)
 
 	192.168.10.10 code.dev
 
