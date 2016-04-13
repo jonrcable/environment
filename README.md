@@ -14,9 +14,11 @@ I will likely build onto this including the instructions on how to do a basic in
 
 note(s)
 - PHPstorm is not required here but we love it, its awesome and you should totally try it out right meow.
+
 https://www.jetbrains.com/phpstorm/
 
 - Laravel is not required here but we love it too, it rocks and you should totally try it out right meow.
+
 https://laravel.com
 
 ## Required 
@@ -24,77 +26,124 @@ The easy part. Download and install the following tools, follow the defaults.
 
 Virtual Box
 https://www.virtualbox.org/wiki/Downloads
+
+
 Vagrant
 https://www.vagrantup.com/downloads.html
+
+
 Sequel Pro
 http://www.sequelpro.com/download
 
 ## Usage
 - install vagrant triggers so we can use callbacks and save our database on up/destroy
+
 	!# vagrant plugin install vagrant-triggers
 
 - create a new folder in the root of your home folder called Development
+
 	!# cd ~/
+
 	!# mkdir Development
 
 - download the homestead package into a folder called Homestead in the root of your home folder
+
 	!# cd ~/
+
 	!# git clone https://github.com/laravel/homestead.git Homestead
+
 	!# cd Homestead
+
 	!# bash init.sh
+
 	(note: this will create an folder called .homestead in your home directory with a file called Homestead.yaml)
 
 - clone this repository into a folder called Code in the root of your home folder
+
 	!# cd ~/
+
 	!# git clone https://github.com/jonrcable/enviroment.git Code
 
-- edit the local Homestead.yaml config file and change the 1st folder in the list to the following 
+
+- edit the local Homestead.yaml config file and change the 1st folder in the list to the following
+
  !# sudo nano ~/.homestead/Homestead.yaml
+
  + edit
+
 	folders:
+
 		- map: ~/Development/Code
+
 		  to:  /home/vagrant/Code
+
  (note e.g.)
+
 	sites:
+
 		- map: code.dev
+
 		  to:  /home/vagrant/Code/Sites/Base/public
+
 		- map: next.dev
+
 		  to:  /home/vagrant/Code/Sites/Next/public
 
-- edit the local hosts config file 
+
+- edit the local hosts config file
+
  !# sudo nano /etc/hosts
+
  + edit (one the last blank line enter each domain, one line each repeat the same IP)
+
 	192.168.10.10 code.dev
 
 - flush the DNS system cache, just in case you encounter issues)
-!# sudo dscacheutil -flushcache
+
+    !# sudo dscacheutil -flushcache
+
 
 - test the hosts file fix works
+
  !# ping code.dev
+
  (should return 192.168.10.10) ctrl+c to exit
 
+
 - goto your web browser
-http://code.dev
+
+    http://code.dev
+
 
 - Open Sequel Pro and import the sequelpro.plist configuration in ~/Code/Share/Configs
 (if a password is required on the first connection, see account information below)
 
+
 ## Testing in PHPStorm
 - open PHPStorm, create a new project and map it to a folder in ~/Development/Code/Sites/{ NEW }
+
 - goto Tools -> Vagrant -> Init in Project Root
+
 - copy the Vagrantfile from ~/Development/Code/Sites/Base into the root of your { NEW } project
+
 - edit the Vagrantfile in PHPStorm and change the following
+
   + edit
+
 	projectDir=“{ NEW }”
 - goto Tools -> Vagrant -> Up
+
 - goto Tools -> Vagrant -> Destroy
+
 - check your work, goto ~/Code/Share/Databases
+
 	(note: you should see a single folder for any project in which a Vagrant box has been started. In each folder you should find the latest sql dump for each database)
 
-Does it work? 
+Does it work?
+
 Magic!
 
 ## Important Details
-**Database User**
-user:homestead
-pass:secret
+**Database User**:
+
+user:homestead / pass:secret
