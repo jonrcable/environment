@@ -22,7 +22,7 @@ At first one of the things that irritated me about using Vagrant in development 
 
 After a recent OS format I decided to give vagrant another try and discovered the Vagrant Trigger extension which allows you to work a little magic on both Up/Destroy. A couple of bash scripts to import and export the current mysql database and store them in a Share folder for each project should not be rocket science, so here we are…  
 
-I will likely build onto this. A few of you outhave been asking me about better environments, here is one of many!
+I will likely build onto this. A few of you have been asking me about building better environments, here is one of many ways to go about it!
 
 
 ## Required 
@@ -73,15 +73,13 @@ http://www.sequelpro.com/download
 
  !# sudo nano ~/.homestead/Homestead.yaml
 
- + edit
+ + edit  (note e.g. you can add more site like so, be careful make sure the folder exists!)
 
 	folders:
 
 		- map: ~/Development/Code
 
 		  to:  /home/vagrant/Code
-
- (note e.g. you can add more site like so, be careful make sure the folder exists!)
 
 	sites:
 
