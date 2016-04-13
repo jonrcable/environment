@@ -3,8 +3,6 @@ Development Environment v1.0
 
 A sensible, organized vagrant workflow using Homestead that works for me. Makes it easy to maintain separate projects, control the VMs directly in PHPStorm and maintain persistent MySQL databases by project on each build. Although this uses the laravel/homestead virtual box as a base; it covers most of the needs for any modern web development.
 
-https://laravel.com/docs/5.2/homestead
-
 ## Persistent Databases
 At first one of the things that irritated me about using Vagrant in development was blowing away my testing data for that day, week… Sure in Laravel we have Database Migrations and Seeding but sometimes you just want to hold on to that testing data for a little while, ya know?!
 
@@ -29,6 +27,10 @@ note(s)
 - Laravel is not required here but we love it too, it rocks and you should totally try it out right meow.
 
    https://laravel.com
+
+- Below will guide you through installing Homestead in the Root of your Home folder this is for reference.
+
+   https://laravel.com/docs/5.2/homestead
 
 
 ## Required Dependencies
