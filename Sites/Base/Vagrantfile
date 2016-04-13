@@ -30,13 +30,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     #trigger the databases to update
     config.trigger.after :up do
       info "Loading the database from the last VM destroy..."
-      run_remote  "cd " + remotePath + "/Share/Scripts; ./import-sql.sh " + projectDir + " " + remotePath
+      run_remote  "cd " + remotePath + "/Share/Scripts; ./import-sql.sh " + projectDir
     end
 
     #back them up before they are gone
     config.trigger.before :destroy do
       info "Dumping the database before destroying the VM..."
-      run_remote  "cd "+ remotePath + "/Share/Scripts; ./export-sql.sh " + projectDir + " " + remotePath
+      run_remote  "cd "+ remotePath + "/Share/Scripts; ./export-sql.sh " + projectDir
     end
 
     Homestead.configure(config, settings)
