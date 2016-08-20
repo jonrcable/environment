@@ -1,0 +1,64 @@
+Video Streaming Server
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+
+sudo add-apt-repository ppa:mc3man/trusty-media
+
+sudo apt-get upgdate
+
+sudo apt-get install ffmpeg build-essential unzip gpac
+
+sudo perlbrew install perl-5.16.3
+sudo perlbrew switch perl-5.16.3
+
+https://github.com/downloads/lstoll/dss/DarwinStreamingSrvr6.0.3-L2-Linux-x64.deb.gz
+
+gzip -d DarwinStreamingSrvr6.0.3-L2-Linux-x64.deb.gz
+
+sudo dpkg -i DarwinStreamingSrvr6.0.3-L2-Linux-x64.deb
+
+Test MP4 Box
+/usr/bin/MP4Box -version
+
+
+
+1. Install Perl
+
+wget http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/perl-5.12.5.tar.gz
+tar -xzf perl-5.12.5.tar.gz
+cd perl-5.16.3
+./Configure -des -Dprefix=$HOME/usr/local
+make
+make test
+sudo make install
+then add:
+
+export PATH=$HOME/usr/local/bin/:$PATH
+
+as result you will get:
+
+ $ perl -v
+ $ perl 5.16
+
+Old perl version is still locate here: /usr/bin/perl
+
+new Perl version will be there: /usr/local/bin/perl
+
+2. Work with CPAN modules
+
+I suggest you install cpanminus (cpanm) for easy manage CPAN modules for new version of Perl.
+
+wget http://search.cpan.org/CPAN/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.5017.tar.gz
+tar -xzf App-cpanminus-1.5017.tar.gz
+cd App-cpanminus-1.5017
+perl Make.pl
+make
+make test
+sudo make install
+After that you can install CPAN modules for your new version of Perl.
+
+
+
+
