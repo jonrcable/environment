@@ -1,5 +1,0 @@
-# ignore the vagrant and local stuff
-*.DS_Store
-Vagrantfile 
-.idea/
-.vagrant/
